@@ -1,3 +1,10 @@
+通常在写sql语句过程中，会遇到mysql存储引擎的选择，即：
+    drop table if exits xxx;
+    create table xxx{
+       id int(11) not null auto_increment,
+       primary key (id)
+    }engine=innodb auto_increment=72 default_charset=utf8;
+
 MyISAM：
 
 1、不支持事务，但是每次查询都是原子的；
